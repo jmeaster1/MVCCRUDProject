@@ -2,23 +2,22 @@ package data;
 
 public class River {
 	
-	private String name;
+	private String id;
 	private String county;
-	private String length;
+	private String name;
 	private String streamType;
-	
-	public River(String name, String county, String length, String streamType) {
+	public River(String id, String county, String name, String streamType) {
 		super();
-		this.name = name;
+		this.id = id;
 		this.county = county;
-		this.length = length;
+		this.name = name;
 		this.streamType = streamType;
 	}
-	public String getName() {
-		return name;
+	public String getId() {
+		return id;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getCounty() {
 		return county;
@@ -26,11 +25,11 @@ public class River {
 	public void setCounty(String county) {
 		this.county = county;
 	}
-	public String getLength() {
-		return length;
+	public String getName() {
+		return name;
 	}
-	public void setLength(String length) {
-		this.length = length;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getStreamType() {
 		return streamType;
@@ -40,7 +39,7 @@ public class River {
 	}
 	@Override
 	public String toString() {
-		return "River [name=" + name + ", county=" + county + ", length=" + length + ", streamType=" + streamType + "]";
+		return "River [id=" + id + ", county=" + county + ", name=" + name + ", streamType=" + streamType + "]";
 	}
 }
 	

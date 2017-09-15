@@ -1,0 +1,14 @@
+body{
+	color:white;
+	font-size: 22px;
+	text-align:center;
+	background-image: url("http://www.inaraft.com/wp-content/uploads/2015/01/gunnison-river-1day-005.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+#links{
+	background-color:lightgrey;
+	border: solid 2px white;
+	color: white;
+	text-shadow: black;
+}

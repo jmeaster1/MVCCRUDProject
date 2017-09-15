@@ -9,8 +9,10 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
+@Component
 public class RiverDAOImpl implements RiverDAO {
 	private static final String FILE_NAME = "/WEB-INF/rivers.csv";		//make csv file!
 	private List<River> rivers = new ArrayList<>();
@@ -35,11 +37,11 @@ public class RiverDAOImpl implements RiverDAO {
 			String line = buf.readLine();
 			while ((line = buf.readLine()) != null) {
 				String[] tokens = line.split(",");
-				String name = tokens[1];
-				String county = tokens[2];
-				String length = tokens[3];
-				String streamType = tokens[4];
-				rivers.add(new River(name, county, length, streamType));
+				String id = tokens[0];
+				String county = tokens[1];
+				String name = tokens[2];
+				String streamType = tokens[3];
+				rivers.add(new River(id, county, name, streamType));
 			}
 		} catch (Exception e) {
 			System.err.println(e);

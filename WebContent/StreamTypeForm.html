@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rivers</title>
+</head>
+<body>
+  <h3>Rivers</h3>
+  <form action="GetRiverData.do" method="GET">
+    Stream type:
+    <!--  <input type="text" name="streamType"/>  -->
+    <select name="streamType">
+				<option value="None">Select</option>
+				<option value="freestone">Freestone</option>
+				<option value="tailwater">Tailwater</option>
+				<option value="spring Creek">SpringCreek</option>
+			</select>
+    <input type="submit" value="Get River Data" />
+  </form>
+</body>
+</html>

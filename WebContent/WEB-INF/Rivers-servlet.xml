@@ -11,7 +11,8 @@
 	<context:component-scan base-package="controllers" />
 	<mvc:annotation-driven />
 
-	<bean id="dao" class="data.RiverDAOImpl" />
+	 <!--  <bean id="dao" class="data.RiverDAOImpl" />-->
+	 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/" />

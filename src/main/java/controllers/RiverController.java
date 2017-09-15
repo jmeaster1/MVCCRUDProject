@@ -33,7 +33,7 @@ public class RiverController {
 	@RequestMapping(path = "GetRiverData.do", params = "name", method = RequestMethod.GET)
 	public ModelAndView getByName(@RequestParam("name") String n) {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("state", dao.getRiverByName(n));
+		mv.addObject("river", dao.getRiverByName(n));
 		mv.setViewName("result");
 		return mv;
 	}
@@ -49,7 +49,7 @@ public class RiverController {
 	@RequestMapping(path = "GetRiverData.do", params = "county", method = RequestMethod.GET)
 	public ModelAndView getByCounty(@RequestParam("county") String n) {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("state", dao.getRiverByCounty(n));
+		mv.addObject("river", dao.getRiverByCounty(n));
 		mv.setViewName("result");
 		return mv;
 	}
@@ -60,6 +60,14 @@ public class RiverController {
 	// command object : State
 	// return : ModelAndView
 	// view : "result.jsp"
+	
+	@RequestMapping(path = "GetRiverData.do", params = "streamType", method = RequestMethod.GET)
+	public ModelAndView getByStreamType(@RequestParam("streamType") String n) {
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("river", dao.getRiverByStreamType(n));
+		mv.setViewName("result");
+		return mv;
+	}
 
 //	@RequestMapping(path = "NewState.do", method = RequestMethod.POST)
 //	public ModelAndView newState(State state) {
