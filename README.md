@@ -1,11 +1,11 @@
-#C.R.U.D.
+# C.R.U.D.
 
 
-##Overview
+## Overview
 
 We are going to have you create a CRUD application, completely from scratch.The goal here is to get comfortable with building a web app, not persisting the data. We can however use the DAO pattern to mimic the functionality of a database, and implement a simple form of file persistence.
 
-##The Application
+## The Application
 
 The goal here is to have you implement C.R.U.D. (Create, Read, Update, Delete), which is some of the most common behavior on the web. It represents the states of persistence that almost every application has (further reading for those interested). Usually CRUD is associated with a database, but we don't want you worrying about one of those, so we are just going to use an array or map for persistence, and save its contents to a file.
 
