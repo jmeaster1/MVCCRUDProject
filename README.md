@@ -18,3 +18,6 @@ Technologies Used:
 	-Gradle
 	-HTML/CSS
 	
+This was coded using the Spring framework and JSPs to minimize repetitive coding. Given enough time, I'd like to add JUnit tests to ensure session data is working properly.
+
+The biggest stumbling blocks I encountered dealt with learning the Spring framework - something I now feel I have a better handle of!
