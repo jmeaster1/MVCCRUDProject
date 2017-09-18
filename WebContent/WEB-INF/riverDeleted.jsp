@@ -28,7 +28,7 @@
 
 	</c:when>
 	<c:otherwise>
-		<p>${river.name} has been deleted</p>
+		<p>This river has been deleted</p>
 	</c:otherwise>
 	</c:choose>
 </body>
