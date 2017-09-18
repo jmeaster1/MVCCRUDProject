@@ -11,7 +11,7 @@ The goal here is to have you implement C.R.U.D. (Create, Read, Update, Delete), 
 
 Your application should adhere to the MVC pattern. Benefits of the MVC pattern is similar to that of encapsulation. There is a separation of concerns between the individual elements that make up the model, view, and controller respectively. Changing code in one has no affect on the code in the others. Their interactions are discussed below.
 
-Created By: Jimmy Easter
+### Created By: Jimmy Easter
 
 Technologies Used:
 
