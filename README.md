@@ -1,5 +1,5 @@
 # C.R.U.D.
-
+### Created By: Jimmy Easter
 
 ## Overview
 
@@ -9,7 +9,6 @@ The goal here was to implement C.R.U.D. (Create, Read, Update, Delete), which is
 
 This application should adheres to the MVC pattern. Benefits of the MVC pattern is similar to that of encapsulation. There is a separation of concerns between the individual elements that make up the model, view, and controller respectively. Changing code in one has no affect on the code in the others. Their interactions are discussed below.
 
-### Created By: Jimmy Easter
 
 Technologies Used:
 
