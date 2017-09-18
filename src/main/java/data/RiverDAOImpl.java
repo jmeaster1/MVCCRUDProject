@@ -87,15 +87,15 @@ public class RiverDAOImpl implements RiverDAO {
 	}
 	
 	@Override
-	public River getRiverByStreamType(String StreamType) {
-		River s = null;
+	public List<River> getRiverByStreamType(String StreamType) {
+		
+		List<River> riverList = new ArrayList();
 		for (River river : rivers) {
 			if (river.getStreamType().equalsIgnoreCase(StreamType)) {
-				s = river;
-				break;
+				riverList.add(river);
 			}
 		}
-		return s;
+		return riverList;
 	}
 
 	@Override

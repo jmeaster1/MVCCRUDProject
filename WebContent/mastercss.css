@@ -7,8 +7,28 @@ body{
 	background-repeat: no-repeat;
 }
 #links{
-	background-color:lightgrey;
-	border: solid 2px white;
+	position: absolute;
+	bottom: 0;
+	font-family: fantasy;
+	background-color: #c6ecff;
+	border: solid 3px white;
 	color: white;
 	text-shadow: black;
+}
+
+
+.riverIMG{
+	height: 380px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px black;
+}
+.rivername{
+	font-size: 1.7em;
+}
+.jsp-river-info{
+	width: 100%;
+	margin: 0 auto 30px auto;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
 }
