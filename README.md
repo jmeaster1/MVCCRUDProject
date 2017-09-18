@@ -14,6 +14,7 @@ Your application should adhere to the MVC pattern. Benefits of the MVC pattern i
 Created By: Jimmy Easter
 
 Technologies Used:
+
 	-Java
 	-Spring MVC
 	-Gradle
