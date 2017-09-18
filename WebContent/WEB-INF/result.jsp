@@ -11,33 +11,24 @@
 </head>
 <body class="bodyclass">
 	<div class="jsp-container">
-		<div class="jsp-river-info">
-
-			
-
-			<p class="rivername">${river.name}</p>
-			<p>${river.county}</p>
-			
-			<br>
-
-		</div>
 		<c:choose>
 			<c:when test="${! empty river}">
 
 				<div class="jsp-river-info">
 
-
+					<img src="${river.imgurl}" class="riverIMG">
 					<p class="rivername">${river.name}</p>
 					<p>${river.county}</p>
+					<p>${river.fact}</p>
 					<br>
-
 				</div>
+	</div>
 
 
-			</c:when>
-			<c:otherwise>
-				<p>No river found</p>
-			</c:otherwise>
-		</c:choose>
+	</c:when>
+	<c:otherwise>
+		<p>No river found</p>
+	</c:otherwise>
+	</c:choose>
 </body>
 </html>

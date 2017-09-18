@@ -41,7 +41,9 @@ public class RiverDAOImpl implements RiverDAO {
 				String county = tokens[1];
 				String name = tokens[2];
 				String streamType = tokens[3];
-				rivers.add(new River(id, county, name, streamType));
+				String imgurl = tokens[4];
+				String fact = tokens[5];
+				rivers.add(new River(id, county, name, streamType, imgurl, fact));
 			}
 		} catch (Exception e) {
 			System.err.println(e);

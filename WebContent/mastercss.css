@@ -1,19 +1,35 @@
-body{
+.indexbody{
 	color:white;
 	font-size: 22px;
 	text-align:center;
-	background-image: url("http://www.inaraft.com/wp-content/uploads/2015/01/gunnison-river-1day-005.jpg");
+	background-image: url("http://www.eikojonesphotography.com/wp-content/gallery/fishing/release-trout-underwater.JPG");
 	background-size:cover;
 	background-repeat: no-repeat;
+	margin-bottom:25px;
 }
 #links{
 	position: absolute;
-	bottom: 0;
-	font-family: fantasy;
+	bottom: 20;
+	font-family: Verdana;
 	background-color: #c6ecff;
 	border: solid 3px white;
 	color: white;
 	text-shadow: black;
+	padding: 3px 3px 3px 3px;
+}
+#links a{
+	color:white;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+}
+#links a:hover{
+	color:#6dcadb;
+	text-decoration: none;
+}
+
+#logo{
+	margin-top: 150px;
+	
 }
 
 
@@ -31,4 +47,18 @@ body{
 	color: white;
 	text-shadow: 2px 2px 2px black;
 	text-align: center;
+}
+.jsp-container{
+	width: 70%;
+	margin: auto;
+	padding: 2%;
+	background-color: rgba(100, 100, 100, .7);
+}
+.bodyclass{
+	background-image:url("http://www.eikojonesphotography.com/wp-content/gallery/trout/elk-river-rainbow-trout-underwater.JPG")
+}
+.riverIMG{
+	height: 380px;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px black;
 }
