@@ -17,6 +17,10 @@ public class River {
 		this.imgurl = imgurl;
 		this.fact = fact;
 	}
+	
+	public River() {
+		
+	}
 	public String getId() {
 		return id;
 	}

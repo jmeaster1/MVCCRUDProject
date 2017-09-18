@@ -18,6 +18,7 @@
 
 					<img src="${river.imgurl}" class="riverIMG">
 					<p class="rivername">${river.name}</p>
+					<p><br></p>
 					<p>${river.county}</p>
 					<p>${river.fact}</p>
 					<br>

@@ -8,10 +8,8 @@
 	margin-bottom:25px;
 }
 #links{
-	position: absolute;
-	bottom: 20;
 	font-family: Verdana;
-	background-color: #c6ecff;
+	background-color: darkgrey;
 	border: solid 3px white;
 	color: white;
 	text-shadow: black;

@@ -60,7 +60,7 @@ public class RiverController {
 	// command object : State
 	// return : ModelAndView
 	// view : "result.jsp"
-	
+
 	@RequestMapping(path = "GetRiverData.do", params = "streamType", method = RequestMethod.GET)
 	public ModelAndView getByStreamType(@RequestParam("streamType") String n) {
 		ModelAndView mv = new ModelAndView();
@@ -69,26 +69,26 @@ public class RiverController {
 		return mv;
 	}
 
-//	@RequestMapping(path = "NewState.do", method = RequestMethod.POST)
-//	public ModelAndView newState(State state) {
-//		dao.addState(state);
-//		ModelAndView mv = new ModelAndView();
-//		mv.setViewName("result.jsp");
-//		return mv;
-//	}
+	// @RequestMapping(path = "NewState.do", method = RequestMethod.POST)
+	// public ModelAndView newState(State state) {
+	// dao.addState(state);
+	// ModelAndView mv = new ModelAndView();
+	// mv.setViewName("result.jsp");
+	// return mv;
+	// }
 
-		// -------------------
+	// -------------------
 
-		// TODO : Implement another request handler for:
-		// path "NewState.do"
-		// method POST
-		// command object : State
-		// return : ModelAndView
-		// view : "redirect:stateAdded.do"
-		// behavior : add state to dao, add state to flashAttributes
+	// TODO : Implement another request handler for:
+	// path "NewState.do"
+	// method POST
+	// command object : State
+	// return : ModelAndView
+	// view : "redirect:stateAdded.do"
+	// behavior : add state to dao, add state to flashAttributes
 
 	@RequestMapping(path = "NewRiver.do", method = RequestMethod.POST)
-	public ModelAndView newState(River river, RedirectAttributes redir) {
+	public ModelAndView newRiver(River river, RedirectAttributes redir) {
 		dao.addRiver(river);
 		ModelAndView mv = new ModelAndView();
 		// mv.setViewName("result.jsp");
@@ -97,18 +97,27 @@ public class RiverController {
 		return mv;
 	}
 
-		// TODO : Implement another request handler for:
-		// path "stateAdded.do"
-		// method GET
-		// command object : State
-		// return : ModelAndView
-		// view : "result.jsp" or "result" if using InternalResourceViewResolver
-		
-		  
-		  @RequestMapping(path = "riverAdded.do", method = RequestMethod.GET)
-		  public String getInfo(River river) {
-		    return "result";  //no longer result.jsp
-		  }
-	
+	// TODO : Implement another request handler for:
+	// path "stateAdded.do"
+	// method GET
+	// command object : State
+	// return : ModelAndView
+	// view : "result.jsp" or "result" if using InternalResourceViewResolver
 
+	@RequestMapping(path = "riverAdded.do", method = RequestMethod.GET)
+	public String getInfo(River river) {
+		return "result"; // no longer result.jsp
 	}
+	
+	@RequestMapping(path = "deleteRiver.do", method = RequestMethod.GET)
+		public ModelAndView deleteRiver( River river) {
+			ModelAndView mv = new ModelAndView();
+			System.out.println("deleteRiver in controller");
+			dao.Delete(river);
+			mv.setViewName("result");
+			return mv;
+			
+			
+		}
+
+}

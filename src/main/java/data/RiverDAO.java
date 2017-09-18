@@ -7,4 +7,5 @@ public interface RiverDAO {
   public River getRiverByCounty(String county);
   public List<River> getRiverByStreamType(String StreamType);
   public void addRiver(River river);
+  public void Delete(River river);
 }

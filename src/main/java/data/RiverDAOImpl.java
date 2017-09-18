@@ -104,4 +104,16 @@ public class RiverDAOImpl implements RiverDAO {
 	public void addRiver(River river) {
 		rivers.add(river);
 	}
+
+	@Override
+	public void Delete(River river) {
+		System.out.println("delete river in dao impl");
+		for (int i = 0; i < rivers.size(); i++) {
+			if(rivers.get(i).getName().equals(river.getName())) {
+				rivers.remove(river);
+			}
+		}
+	}
+	
+	
 }
